@@ -1,0 +1,10 @@
+name: ego-assistant/qna
+description: Answers questions from help documentation and product manuals.
+version: 1.0
+inputs:
+  text: string
+template: |
+  Answer the following question based on the provided text:
+  {{text}}
+outputs:
+  response: string

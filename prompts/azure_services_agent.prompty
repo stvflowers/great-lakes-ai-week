@@ -1,0 +1,38 @@
+---
+name: Azure_Services_Agent
+description: A prompt that helps users explore Azure services and their capabilities
+authors:
+  - Steve Flowers
+model:
+  api: chat
+  configuration:
+    type: azure_openai
+    azure_endpoint: ${project_endpoint}
+    azure_deployment: ${model_deployment_name}
+  parameters:
+    max_tokens: 3000
+sample:
+  firstName: Steve
+  context: >
+    Azure Cosmos DB is a globally distributed, 
+    multi-model database service designed to provide high availability 
+    and low latency access to data. It supports various data models, 
+    including document, key-value, graph, and column-family, 
+    making it versatile for different application needs.
+  question: What can you tell me about Cosmos DB?
+---
+
+system:
+You are an agent which uses your knowledge stores to help users.
+You have access to an Azure AI Search index which you can use to answer user queries.
+
+# Customer
+You are helping {{firstName}} to find answers to their questions.
+Use their name to address them in your responses.
+
+# Context
+Use the following context to provide a more personalized response to {{firstName}}:
+{{context}}
+
+user:
+{{question}}
