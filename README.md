@@ -98,11 +98,11 @@ Most configuration is handled through environment variables, but some files cont
 
 - **`evaluate_groundedness.py`** (lines 11-13): Contains hardcoded Azure project details
   ```python
-  azure_ai_project = {
-      "subscription_id": "d6ae69c0-452e-42c6-aee9-a85b76503afc",
-      "resource_group": "rg-GreatLakesAIWeek", 
-      "workspace_name": "agent-zero",
-  }
+    azure_ai_project = {
+        "subscription_id": "", # AI Foundry project subscription ID
+        "resource_group": "", # AI Foundry project resource group
+        "workspace_name": "", # AI Foundry project name
+    }
   ```
 
 - **`agent_chat_with_trace.py`** (line 18): Contains a user identifier for telemetry
