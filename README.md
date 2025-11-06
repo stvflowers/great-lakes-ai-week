@@ -2,6 +2,11 @@
 
 This repository contains code samples and demonstrations for the 2025 Northwest Ohio Great Lakes AI Week presentation, showcasing various Azure AI and OpenAI integrations with Python.
 
+## 📖 Presentation
+
+Great Lakes AI Week Presentation NOV2025.pptx
+
+
 ## 📁 Repository Structure
 
 ### Python Files Overview
@@ -85,44 +90,6 @@ Create a `.env` file from `.env.sample` and configure the following variables:
 The examples use `InteractiveBrowserCredential` for Azure authentication. You'll need to:
 1. Install Azure CLI: `az login`
 2. Ensure your account has appropriate permissions for Azure AI services
-
-## 📖 Usage Examples
-
-### Basic Chat with Telemetry
-```bash
-python agent_chat_with_prompty.py
-```
-Demonstrates basic OpenAI chat completion with Azure Monitor telemetry.
-
-### Advanced Agent with Tracing
-```bash
-python agent_chat_with_trace.py
-```
-Shows how to use AI Foundry agents with custom tracing spans.
-
-### Create New Agent
-```bash
-python new_agent_example.py
-```
-Creates and interacts with a new AI agent that has code interpreter capabilities.
-
-### Agent with Search
-```bash
-python new_agent_existing_search_index.py
-```
-Demonstrates an agent integrated with Azure AI Search for knowledge retrieval.
-
-### Run Evaluations
-```bash
-python evaluate_groundedness.py
-```
-Evaluates AI responses for groundedness using Azure's evaluation framework.
-
-### Local Model Testing
-```bash
-python sample_foundry_local.py
-```
-Runs a lightweight local model using Foundry Local Manager.
 
 ## 🔧 Key Configuration Notes
 
