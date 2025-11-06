@@ -14,9 +14,9 @@ import importlib.resources as pkg_resources
 from azure.identity import DefaultAzureCredential, get_bearer_token_provider
 
 azure_ai_project = {
-    "subscription_id": "d6ae69c0-452e-42c6-aee9-a85b76503afc",
-    "resource_group": "rg-GreatLakesAIWeek",
-    "workspace_name": "agent-zero",
+    "subscription_id": "", # AI Foundry project subscription ID
+    "resource_group": "", # AI Foundry project resource group
+    "workspace_name": "", # AI Foundry project name
 }
 
 # Standard Azure OpenAI Endpoint
