@@ -4,7 +4,7 @@ This repository contains code samples and demonstrations for the 2025 Northwest 
 
 ## 📖 Presentation
 
-Great Lakes AI Week Presentation NOV2025.pptx
+Great Lakes AI Week Presentation NOV2025.pdf
 
 
 ## 📁 Repository Structure
